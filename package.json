@@ -4,19 +4,20 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^1.0.0",
+    "lodash": "^4.17.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "youtube-api-search": "0.0.5"
   },
   "homepage": "https://philschoof.github.io/philtube/",
   "devDependencies": {},
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "react-scripts build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "react-scripts build && gh-pages -d build"
+    "eject": "react-scripts eject"
   }
 }
